@@ -63,6 +63,6 @@ void pipe_server(int readfd, int writefd) {
     result = SpaceExterminator(numRead,  atoi(argv[1]), inputFd, outputFd);
     dlclose(ext_library);
 
-    sprintf(buff, "File %s done, result=%d\n", argv[1], result);
+    sprintf(buff, "File %s done, result=%d\n", argv[3], result);
     write(writefd, buff, strlen(buff));
 }
