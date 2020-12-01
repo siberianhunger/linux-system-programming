@@ -14,7 +14,7 @@ extern void pipe_server(int, int);
 int main(int argc, char *argv[]) {
     // проверка на количество аргументов в командной строке
     if (argc < 4 || (argc - 1) % 3 != 0) {
-        printf("Usage: spaces_to_delete inp_file1 out_file1 inp_file2 out_file2 ...\n");
+        printf("Usage: spaces_to_delete inp_file1 out_file1 spaces_to_delete inp_file2 out_file2 ...\n");
         exit(-1);
     }
 
